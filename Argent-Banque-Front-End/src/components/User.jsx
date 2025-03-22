@@ -4,6 +4,7 @@ import { updateUsername } from '../redux/actions/user.actions.jsx';
 import { isValidName } from "../utils/regex.jsx";
 import '../sass/components/_UserProfile.scss';
 
+
 function User () {
     /* Updates user data on profile page from state redux */
     const token = useSelector((state) => state.auth.token);
@@ -32,17 +33,16 @@ function User () {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${token}`,
-    
                 },
                 body: JSON.stringify({userName}),
             });
             if (response.ok) {
                 const data = await response.json();
                 const username = data.body.userName;
-                
-                   // Checking that the query response is indeed retrieved
+                /* 
+                    Checking that the query response is indeed retrieved
                     console.log(data) 
-                
+                */
                 dispatch(updateUsername(username));
                 setDisplay(!display);
             } else {
@@ -60,7 +60,7 @@ function User () {
                 <div>
                     <h2>Welcome back 
                         <br />
-                        {userData.firstname} {userData.lastname} !
+                        {userData.firstname} {userData.lastname} 
                     </h2>
                     <button className="edit-button" onClick={() => setDisplay(!display)}>Edit Name</button>
                 </div>
