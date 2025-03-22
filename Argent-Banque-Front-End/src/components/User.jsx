@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { updateUsername } from '../redux/actions/user.actions.jsx';
 import { isValidName } from "../utils/regex.jsx";
 import '../sass/components/_UserProfile.scss';
-
-
+import Header from './Header.jsx';
+;
 function User () {
     /* Updates user data on profile page from state redux */
     const token = useSelector((state) => state.auth.token);
@@ -39,10 +39,10 @@ function User () {
             if (response.ok) {
                 const data = await response.json();
                 const username = data.body.userName;
-                /* 
-                    Checking that the query response is indeed retrieved
+                
+                  //  Checking that the query response is indeed retrieved
                     console.log(data) 
-                */
+                
                 dispatch(updateUsername(username));
                 setDisplay(!display);
             } else {
@@ -55,7 +55,10 @@ function User () {
     }
     
     return (
+                    
         <div className="header">
+            {/* Return Header component */}
+            < Header />
             { display ? 
                 <div>
                     <h2>Welcome back 
