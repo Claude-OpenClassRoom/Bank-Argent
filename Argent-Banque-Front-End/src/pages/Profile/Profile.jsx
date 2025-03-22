@@ -24,10 +24,10 @@ function UserProfile () {
                     });
                     if (response.ok) {
                         const data = await response.json();
-                        /* 
-                            Checking that the query response is indeed retrieved
+                         
+                          //  Checking that the query response is indeed retrieved
                             console.log(data) 
-                        */
+                        
                         const userData = {
                             createdAt: data.body.createdAt,
                             updatedAt: data.body.updatedAt,

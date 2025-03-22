@@ -32,16 +32,17 @@ function User () {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${token}`,
+    
                 },
                 body: JSON.stringify({userName}),
             });
             if (response.ok) {
                 const data = await response.json();
                 const username = data.body.userName;
-                /* 
-                    Checking that the query response is indeed retrieved
+                
+                   // Checking that the query response is indeed retrieved
                     console.log(data) 
-                */
+                
                 dispatch(updateUsername(username));
                 setDisplay(!display);
             } else {
