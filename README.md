@@ -71,7 +71,7 @@ Transactions, nous sommes encore en phase de conception. Nous mettons au point u
     - de visualiser toutes leurs transactions pour le mois en cours, groupées par compte ;
     - de visualiser les détails d'une transaction dans une autre vue ;
     - d'ajouter, de modifier ou de supprimer des informations sur une transaction (on ne supprimera ou n'ajoutera pas de transaction).
-    - Chanque Transaction comprend les éléments suivants :
+    - Chanque Transaction comprend les propriétés suivants :
          -Id
          - userId
          -Date
