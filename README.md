@@ -1,7 +1,7 @@
 ﻿# Bank-Argent
 ArgentBank
 
-![ArgentBank](./Front/src/assets/argentBankLogo.png)
+
 
 
 ![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)
