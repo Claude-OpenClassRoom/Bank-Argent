@@ -20,21 +20,7 @@ ArgentBank
 
 ## Phase 2: Modéliser l'API pour la gestion des transactions
 
-#### Endpoints :
-Transactions, nous sommes encore en phase de conception. Nous mettons au point une fonctionnalité pour les transactions, qui doit pouvoir permettre aux utilisateurs :
-    - de visualiser toutes leurs transactions pour le mois en cours, groupées par compte ;
-    - de visualiser les détails d'une transaction dans une autre vue ;
-    - d'ajouter, de modifier ou de supprimer des informations sur une transaction (on ne supprimera ou n'ajoutera pas de transaction).
-    - Chanque Transaction comprend les éléments suivants :
-         -Id
-         - userId
-         -Date
-         -Type
-         - Catégorie
-         - Montant
-         - Balance
-         - Notes
-         - Description
+
 #### Compétences évaluées :
 
  -   Implémenter un gestionnaire d'état dans une application React avec Redux et Redux Toolkit et RTK Query
@@ -80,7 +66,21 @@ Le projet se décompose en deux phases :
 #### Contraintes techniques :
 - Utilisation du format YAML et de Swagger pour visualiser les futurs endpoints de l'API pour gérer toute la partie transaction de l'application
 
-
+#### Endpoints :
+Transactions, nous sommes encore en phase de conception. Nous mettons au point une fonctionnalité pour les transactions, qui doit pouvoir permettre aux utilisateurs :
+    - de visualiser toutes leurs transactions pour le mois en cours, groupées par compte ;
+    - de visualiser les détails d'une transaction dans une autre vue ;
+    - d'ajouter, de modifier ou de supprimer des informations sur une transaction (on ne supprimera ou n'ajoutera pas de transaction).
+    - Chanque Transaction comprend les éléments suivants :
+         -Id
+         - userId
+         -Date
+         -Type
+         - Catégorie
+         - Montant
+         - Balance
+         - Notes
+         - Description
 ### Branche Main:
 
 utilisation de Redux et de Redux Toolkit (createAsyncThunk et createSlice)
