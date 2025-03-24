@@ -81,6 +81,15 @@ Transactions, nous sommes encore en phase de conception. Nous mettons au point u
          - Balance
          - Notes
          - Description
+#### Tâches à faire
+Parmi les éléments clés à spécifier pour chaque endpoint de l’API, il faudra :
+    - la méthode HTTP (ex. : GET, POST, etc.) ;
+    - la route (ex. : /store/inventory) ;
+    - la description de ce à quoi correspond l’endpoint ;
+    - les paramètres possibles pour tenir compte des différents scénarios (ex. : itemId (facultatif) = ID de l'article spécifique à demander à la base de données d'inventaire) ;
+    - les différentes réponses avec les codes de réponse correspondants qui ont un sens pour cet endpoint (ex. : 404 : réponse d'erreur d'article inconnu).
+
+Vous pouvez utiliser la page des transactions présentée dans les maquettes pour guider vos choix (mais vous n'avez pas besoin d'implémenter cette page). Assurez-vous simplement que le document soit exporté vers un fichier YAML (c'est-à-dire Fichier > Enregistrer sous YAML) en utilisant la syntaxe Swagger, qui peut être exportée dans l'outil d'édition de Swagger.
 ### Branche Main:
 
 utilisation de Redux et de Redux Toolkit (createAsyncThunk et createSlice)
